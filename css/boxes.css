@@ -1,0 +1,47 @@
+/*** BOXES ***/
+.boxes {
+    display: grid;
+    grid-gap: 3px;
+}
+
+
+.box {
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+    min-height: 320px;
+    display: flex;
+}
+
+.box__info {
+    background: #536dfe;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    text-align: center;
+    align-self: flex-end;
+    flex-basis: 100%;
+}
+
+.box__link {
+    background: #607d8b;
+    color: inherit;
+}
+
+.box__link:hover {
+    color: inherit;
+}
+
+@media (min-width: 768px) {
+    .boxes {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 992px) {
+    .boxes {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
