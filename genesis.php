@@ -1,16 +1,7 @@
 <?php
     require('./config/config.php');
     require('./config/db.php');
-
-    $query = "SELECT * FROM music WHERE system = 'genesis'";
-    $result = mysqli_query($conn, $query);
-    // Fetch data
-    $music = mysqli_fetch_all($result, MYSQLI_ASSOC);
-    // Free Result
-    mysqli_free_result($result);
-    // Close Connection
-    mysqli_close($conn);
-
+    require('./config/queries.php');
 ?>
 
 <?php include('./Inc/header.php'); ?>
